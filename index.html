@@ -18,7 +18,6 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -29,7 +28,7 @@
       line-height: 1.7;
     }
 
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: var(--navy);
@@ -56,23 +55,18 @@
     }
     .nav-links a:hover { color: var(--gold); }
 
-    /* ── SECTIONS ── */
+    /* LAYOUT */
     section { padding: 5rem 0; }
     .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
 
-    /* ── HOME ── */
-    #home {
-      padding-top: 7rem;
-      background: var(--cream);
-    }
+    /* HOME */
+    #home { padding-top: 7rem; background: var(--cream); }
     .home-inner {
       display: flex;
       align-items: flex-start;
       gap: 3.5rem;
     }
-    .photo-wrap {
-      flex-shrink: 0;
-    }
+    .photo-wrap { flex-shrink: 0; }
     .photo-wrap img {
       width: 195px;
       height: 195px;
@@ -118,14 +112,10 @@
     }
     .contact-line a:hover { color: var(--gold); }
 
-    /* ── DIVIDER ── */
-    .section-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 0;
-    }
+    /* DIVIDER */
+    .section-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
 
-    /* ── SECTION HEADERS ── */
+    /* SECTION HEADERS */
     .section-header {
       font-family: 'Lora', serif;
       font-size: 1.5rem;
@@ -137,16 +127,14 @@
       display: inline-block;
     }
 
-    /* ── RESEARCH ── */
+    /* RESEARCH */
     #research { background: var(--warm); }
-
     .paper {
       margin-bottom: 2rem;
       padding-bottom: 2rem;
       border-bottom: 1px solid var(--border);
     }
     .paper:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
     .paper-status {
       display: inline-block;
       font-size: 0.72rem;
@@ -157,9 +145,8 @@
       border-radius: 20px;
       margin-bottom: 0.5rem;
     }
-    .status-wp   { background: #d4e8d4; color: #2d6a2d; }
-    .status-wip  { background: #e8e0d0; color: #7a6840; }
-
+    .status-wp  { background: #d4e8d4; color: #2d6a2d; }
+    .status-wip { background: #e8e0d0; color: #7a6840; }
     .paper-title {
       font-family: 'Lora', serif;
       font-size: 1.05rem;
@@ -174,19 +161,11 @@
       margin-bottom: 0.6rem;
     }
     .paper-authors strong { color: var(--text); font-weight: 500; }
-    .paper-abstract {
-      font-size: 0.9rem;
-      color: #4a4540;
-      line-height: 1.65;
-    }
+    .paper-abstract { font-size: 0.9rem; color: #4a4540; line-height: 1.65; }
 
-    /* ── CV ── */
+    /* CV */
     #cv { background: var(--cream); }
-    .cv-description {
-      font-size: 0.96rem;
-      color: var(--muted);
-      margin-bottom: 1.8rem;
-    }
+    .cv-description { font-size: 0.96rem; color: var(--muted); margin-bottom: 1.8rem; }
     .cv-btn {
       display: inline-block;
       background: var(--navy);
@@ -201,7 +180,7 @@
     }
     .cv-btn:hover { background: var(--gold); color: var(--navy); }
 
-    /* ── CONTACT ── */
+    /* CONTACT */
     #contact { background: var(--warm); }
     .contact-grid {
       display: grid;
@@ -225,7 +204,7 @@
     }
     .contact-item a:hover { border-color: var(--gold); }
 
-    /* ── FOOTER ── */
+    /* FOOTER */
     footer {
       background: var(--navy);
       color: #888;
@@ -234,14 +213,13 @@
       font-size: 0.8rem;
     }
 
-    /* ── FADE IN ── */
+    /* FADE IN */
     .fade-in {
       opacity: 0;
       transform: translateY(18px);
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
     .fade-in.visible { opacity: 1; transform: none; }
-    #home .fade-in { opacity: 1; transform: none; }
 
     @media (max-width: 620px) {
       .home-inner { flex-direction: column; align-items: center; text-align: center; }
@@ -274,7 +252,7 @@
       </div>
       <div class="home-text">
         <h1>Hamzah S. Ahmed</h1>
-        <p class="subtitle">Ph.D. Candidate in Economics &nbsp;·&nbsp; University of Southern California</p>
+        <p class="subtitle">Ph.D. Candidate in Economics &nbsp;&middot;&nbsp; University of Southern California</p>
         <p>
           I am a third-year Ph.D. student in Economics at the University of Southern California. My research sits at the intersection of labor and public economics, with a focus on how policy affects the lives of children and families. I study questions in child welfare, education, and social policy using administrative data and quasi-experimental methods.
         </p>
@@ -282,8 +260,8 @@
           Before USC, I completed my M.A. in Economics at Duke University and my B.S. in Applied and Computational Mathematics at USC, where I graduated <em>summa cum laude</em>.
         </p>
         <div class="contact-line">
-          <a href="/cdn-cgi/l/email-protection#c1a9a0acbba0a9a0a981b4b2a2efa4a5b4"><span class="__cf_email__" data-cfemail="452d24283f242d242d053036266b202130">[email&#160;protected]</span></a>
-          <a href="https://www.linkedin.com/in/h-s-ahmed/" target="_blank">LinkedIn</a>
+          <a href="mailto:hamzahah@usc.edu">hamzahah@usc.edu</a>
+          <a href="https://hamzahsahmed.github.io">Personal Website</a>
           <a href="#cv">Curriculum Vitae</a>
         </div>
       </div>
@@ -299,7 +277,6 @@
     <div class="fade-in">
       <h2 class="section-header">Research</h2>
 
-      <!-- Paper 1 -->
       <div class="paper">
         <span class="paper-status status-wp">Working Paper</span>
         <p class="paper-title">Improving School Funding Decisions using AI: Evidence from Nevada</p>
@@ -309,7 +286,6 @@
         </p>
       </div>
 
-      <!-- Paper 2 -->
       <div class="paper">
         <span class="paper-status status-wip">Work in Progress</span>
         <p class="paper-title">Family Separation and Economic Hardship: Evidence from Foster Care Placements</p>
@@ -319,7 +295,6 @@
         </p>
       </div>
 
-      <!-- Paper 3 -->
       <div class="paper">
         <span class="paper-status status-wip">Work in Progress</span>
         <p class="paper-title">Competition or Cream-Skimming? Charter School Expansion and Public School Quality in Nevada</p>
@@ -339,9 +314,7 @@
 <section id="cv">
   <div class="container fade-in">
     <h2 class="section-header">Curriculum Vitae</h2>
-    <p class="cv-description">
-      My CV includes my full research, teaching, and academic background. Last updated March 2026.
-    </p>
+    <p class="cv-description">My CV includes my full research, teaching, and academic background. Last updated March 2026.</p>
     <a class="cv-btn" href="Hamzah_Ahmed_CV.pdf" target="_blank">Download CV (PDF)</a>
   </div>
 </section>
@@ -355,26 +328,30 @@
     <div class="contact-grid">
       <div class="contact-item">
         <label>Email</label>
-        <a href="/cdn-cgi/l/email-protection#fe969f93849f969f96be8b8d9dd09b9a8b"><span class="__cf_email__" data-cfemail="533b323e29323b323b132620307d363726">[email&#160;protected]</span></a>
+        <a href="mailto:hamzahah@usc.edu">hamzahah@usc.edu</a>
       </div>
       <div class="contact-item">
-        <label>LinkedIn</label>
-        <a href="https://www.linkedin.com/in/h-s-ahmed/" target="_blank">linkedin.com/in/h-s-ahmed</a>
+        <label>Website</label>
+        <a href="https://hamzahsahmed.github.io">hamzahsahmed.github.io</a>
       </div>
       <div class="contact-item">
         <label>Office</label>
         <span>KAP 300, 3620 S Vermont Ave<br>Los Angeles, CA 90089</span>
-      </div>
-      <div class="contact-item">
-        <label>Phone</label>
-        <span>(503) 927-5269</span>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  &copy; 2026 Hamzah S. Ahmed &nbsp;·&nbsp; University of Southern California
+  &copy; 2026 Hamzah S. Ahmed &nbsp;&middot;&nbsp; University of Southern California
 </footer>
 
-<script data-cfasy
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
